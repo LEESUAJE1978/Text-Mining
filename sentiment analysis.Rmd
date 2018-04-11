@@ -1,0 +1,34 @@
+---
+title: "Sentiment Analysis"
+author: "LEESUJAE"
+date: "2018년 4월 10일"
+Ref: Text mining with R
+output: html_document
+---
+###1. 감성 사전 3종(3 type of sentiments lexicon)불러오기
+```{r sentiments lexicon}
+get_sentiments("afinn")
+get_sentiments("bing")
+get_sentiments("nrc")
+```
+
+###2. 필요 라이브러리 로딩(library loading)
+```{r library}
+library(janeaustenr) #janeaustenr 소설 패키지
+library(dplyr) #Data Manipulation
+library(stringr) #text Manipulation
+library(tidytext) #token analysis
+library(ggplot2)#visualization
+library(wordcloud)# wordcloud
+library(tidyr)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
